@@ -10,13 +10,16 @@
 
 SAMPLE_RATE=16000
 # create api-key at https://console.cloud.google.com/apis/credentials
-KEY="......your-api-key......."
+KEY="here please insert your google api-key"
 
 START="transcript\": \""
 END="\","
 
 rm -f audiofile.flac
 rm -f audiofile.base64
+rm -f stt.txt
+rm -f erg.txt
+rm -f body.txt
 
 rec -c1 audiofile.flac vad -s 1 -t 7 -T 0.2 -g 0.5 silence -l 0 0 0:00:03 1% rate $SAMPLE_RATE
 #play -c1 file.flac 
