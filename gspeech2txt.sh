@@ -3,8 +3,10 @@
 # curl google speech api example
 # UN 05.04.2021
 #
+# dependencies
 # sudo apt-get install curl
 # sudo apt-get install sox
+# sudo apt-get install coreutils
 
 SAMPLE_RATE=16000
 # create api-key at https://console.cloud.google.com/apis/credentials
